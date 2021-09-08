@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalTracks.Web", "DentalTracks.Web\DentalTracks.Web.csproj", "{F15B0EBA-F0EB-4D28-9A9B-BA4DB7B2E73B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{54E1F806-287A-4C9C-B8C5-2927D2BAAB78}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalTracks.Core", "DentalTracks.Core\DentalTracks.Core.csproj", "{4D3C64B5-30D0-4FC3-9E46-2C8E61C2DD13}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DentalTracks.DB", "DentalTracks.DB\DentalTracks.DB.sqlproj", "{5AE2D57E-8F5B-4274-A25A-97830282A6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalTracks.Data", "DentalTracks.Data\DentalTracks.Data.csproj", "{11AB199D-AED2-467E-8396-D04B4BBDEA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DentalTracks.Service", "DentalTracks.Service\DentalTracks.Service.csproj", "{61FFD0CC-3AB6-4BD0-8BA3-C6B460EF6C05}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://notquo.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DentalTracks.Core\\DentalTracks.Core.csproj
+		SccProjectName1 = DentalTracks.Core
+		SccLocalPath1 = DentalTracks.Core
+		SccProjectUniqueName2 = DentalTracks.Data\\DentalTracks.Data.csproj
+		SccProjectName2 = DentalTracks.Data
+		SccLocalPath2 = DentalTracks.Data
+		SccProjectUniqueName3 = DentalTracks.DB\\DentalTracks.DB.sqlproj
+		SccProjectName3 = DentalTracks.DB
+		SccLocalPath3 = DentalTracks.DB
+		SccProjectUniqueName4 = DentalTracks.Service\\DentalTracks.Service.csproj
+		SccProjectName4 = DentalTracks.Service
+		SccLocalPath4 = DentalTracks.Service
+		SccProjectUniqueName5 = DentalTracks.Web\\DentalTracks.Web.csproj
+		SccProjectName5 = DentalTracks.Web
+		SccLocalPath5 = DentalTracks.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F15B0EBA-F0EB-4D28-9A9B-BA4DB7B2E73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15B0EBA-F0EB-4D28-9A9B-BA4DB7B2E73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15B0EBA-F0EB-4D28-9A9B-BA4DB7B2E73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15B0EBA-F0EB-4D28-9A9B-BA4DB7B2E73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3C64B5-30D0-4FC3-9E46-2C8E61C2DD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3C64B5-30D0-4FC3-9E46-2C8E61C2DD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3C64B5-30D0-4FC3-9E46-2C8E61C2DD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3C64B5-30D0-4FC3-9E46-2C8E61C2DD13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE2D57E-8F5B-4274-A25A-97830282A6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE2D57E-8F5B-4274-A25A-97830282A6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE2D57E-8F5B-4274-A25A-97830282A6C5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5AE2D57E-8F5B-4274-A25A-97830282A6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE2D57E-8F5B-4274-A25A-97830282A6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE2D57E-8F5B-4274-A25A-97830282A6C5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{11AB199D-AED2-467E-8396-D04B4BBDEA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11AB199D-AED2-467E-8396-D04B4BBDEA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11AB199D-AED2-467E-8396-D04B4BBDEA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11AB199D-AED2-467E-8396-D04B4BBDEA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FFD0CC-3AB6-4BD0-8BA3-C6B460EF6C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FFD0CC-3AB6-4BD0-8BA3-C6B460EF6C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FFD0CC-3AB6-4BD0-8BA3-C6B460EF6C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FFD0CC-3AB6-4BD0-8BA3-C6B460EF6C05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

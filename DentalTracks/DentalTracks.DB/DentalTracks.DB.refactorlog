@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="4ecf16ac-dc60-45fe-86bb-853727fa0b50" ChangeDateTime="08/02/2016 22:52:22">
+    <Property Name="ElementName" Value="[Nav].[Menu].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nav].[Menu]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MenuId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1f066fd7-515f-4f84-99e7-98cde87279a0" ChangeDateTime="08/02/2016 22:53:19">
+    <Property Name="ElementName" Value="[Nav].[MenuItem].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nav].[MenuItem]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MenuItem" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="deaf43e1-b00b-4084-aea9-e2f4a220853b" ChangeDateTime="08/02/2016 22:54:37">
+    <Property Name="ElementName" Value="[Nav].[Menu].[Key]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nav].[Menu]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SecurityKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a32f428d-72cf-48f9-89be-d115e27e3e87" ChangeDateTime="08/02/2016 22:57:01">
+    <Property Name="ElementName" Value="[Nav].[MenuItemRelationship].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nav].[MenuItemRelationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MenuItemRelationshipId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5338319-399e-4646-ac4d-4ea61238fb02" ChangeDateTime="08/02/2016 22:58:11">
+    <Property Name="ElementName" Value="[Nav].[MenuItemRelationship].[MinSecurityLevel]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nav].[MenuItemRelationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SecurityLevel" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e3e22367-69c8-4ec5-8f3f-2a3a3342a288" ChangeDateTime="08/03/2016 00:05:56">
+    <Property Name="ElementName" Value="[Nav].[MenuItem].[MenuItem]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Nav].[MenuItem]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MenuItemId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c4684306-b521-43cf-a056-eaef827c000d" ChangeDateTime="12/01/2016 02:27:21">
+    <Property Name="ElementName" Value="[dbo].[Contact].[F]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Contact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FirstName" />
+  </Operation>
+</Operations>

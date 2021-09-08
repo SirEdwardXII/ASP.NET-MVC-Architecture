@@ -1,0 +1,10 @@
+﻿CREATE TABLE [Person].[Contact]
+(
+	[Id] INT IDENTITY(1,1) PRIMARY KEY,
+    [FirstName] VARCHAR(50) NOT NULL, 
+    [LastName] VARCHAR(50) NOT NULL, 
+    [EmailAddress] NVARCHAR(50) NOT NULL, 
+    [Subject] NVARCHAR(50) NULL, 
+    [Message] NVARCHAR(MAX) NULL, 
+    [CreatedDate] DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIME()
+)

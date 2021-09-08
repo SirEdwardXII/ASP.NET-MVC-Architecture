@@ -1,0 +1,106 @@
+﻿@model DentalTracks.Web.Models.CreateContactViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container body-content">
+    <h2> Create Contact </h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">@Html.LabelFor(model => model.contactViewModel.FirstName)</span>
+                        @Html.EditorFor(model => model.contactViewModel.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    @Html.ValidationMessageFor(model => model.contactViewModel.FirstName, "", new { @class = "text-danger" })
+                </div>
+                <div class="clearfix"></div>
+                <br />
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon3">@Html.LabelFor(model => model.contactViewModel.LastName)</span>
+                        @Html.EditorFor(model => model.contactViewModel.LastName, new { htmlAttributes = new { @class = "form-control" } })
+
+                    </div>
+                </div>
+                <div class="col-md-6">@Html.ValidationMessageFor(model => model.contactViewModel.LastName, "", new { @class = "text-danger" })</div>
+                <div class="clearfix"></div>
+                <br />
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon4">
+                            @Html.LabelFor(model => model.contactViewModel.EmailAddress)
+                        </span>
+                        @Html.EditorFor(model => model.contactViewModel.EmailAddress, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+                <div class="col-md-6">@Html.ValidationMessageFor(model => model.contactViewModel.EmailAddress, "", new { @class = "text-danger" })</div>
+                <div class="clearfix"></div>
+                <br />
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon5">
+                            @Html.LabelFor(model => model.contactViewModel.Subject)
+                        </span>
+                        @Html.EditorFor(model => model.contactViewModel.Subject, new { htmlAttributes = new { @class = "form-control"} })
+                    </div>
+                </div>
+                <div class="col-md-6"> @Html.ValidationMessageFor(model => model.contactViewModel.Subject, "", new { @class = "text-danger" })</div>
+                <div class="clearfix"></div>
+                <br />
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon6">
+                            @Html.LabelFor(model => model.contactViewModel.Message)
+                        </span>
+                        @Html.EditorFor(model => model.contactViewModel.Message, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+                <div class="col-md-6">@Html.ValidationMessageFor(model => model.contactViewModel.Message, "", new { @class = "text-danger" }) </div>
+                <div class="clearfix"></div>
+                <br />
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="clearfix"></div>
+
+            <div class="col-md-offset-6 col-md-6"><input type="submit" value="Create" class="btn btn-primary" /></div>
+            <div class="clearfix"></div>
+
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>
+
+@section Styles{
+
+    @Styles.Render("~/Content/contact")
+
+}
+
+@section scripts{
+   
+    @Scripts.Render("~/scripts/createContact")
+
+}
